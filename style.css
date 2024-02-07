@@ -1,0 +1,50 @@
+body {
+    background-image: linear-gradient 
+    (135deg, #667eea 0%, #764ba2 100%);
+  }
+  #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .book {
+    position: relative;
+    border-radius: 10px;
+    width: 210px;
+    height: 300px;
+    background-image: url(cover.jpg);
+    background-size: cover;
+    background-position: center;
+    background-size: 90%;    
+    box-shadow: 1px 1px 12px #000;
+    transform: preserve-3d;
+    perspective: 2000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+  .cover {
+    top: 0;
+    position: absolute;
+    background-color: lightgray;
+    background-color: #4158D0;
+    background-image: url(top.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    transform-origin: 0;
+    box-shadow: 1px 1px 12px #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .book:hover .cover {
+    transition: all 0.5s;
+    transform: rotatey(-85deg);
+  }
